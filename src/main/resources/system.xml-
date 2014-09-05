@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<system_object key="0" value="org.jcommon.com.util.jmx.JmxManager" />
+	<system_object key="1" value="org.jcommon.com.util.share.ShareManager" />
+	<system_object key="2" value="org.jcommon.com.jsip.UsersMonitor" />
+	<system_object key="3" value="org.jcommon.com.jsip.PresenceMonitor" />
+	<init_threads>500</init_threads>
+	<version>20121009</version>
+	<mbean_server>sip_server</mbean_server>
+	<htmladapter user="admin" password="admin" port="10042" />
+	<!--  <ShareObject rmi="rmiadapter" name="ShareObject" role="client" CREDENTIALS="ptsws" addr="127.0.0.1" port="10043" />-->
+</root>

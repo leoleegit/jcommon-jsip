@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sip-app xmlns="http://www.jcp.org/xml/ns/sipservlet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.jcp.org/xml/ns/sipservlet http://www.jcp.org/xml/ns/sipservlet/sip-app_1_1.xsd"
+	version="1.1">
+	<app-name>jsip</app-name>
+	<servlet-selection>
+		<main-servlet>MainSipServlet</main-servlet>
+	</servlet-selection>
+	<servlet>
+		<servlet-name>MainSipServlet</servlet-name>
+		<servlet-class>org.jcommon.com.jsip.MainSipServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>org.jcommon.com.jsip.servlet.RegisterServlet</servlet-class>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>Presence</servlet-name>
+		<servlet-class>org.jcommon.com.jsip.servlet.PresenceServlet</servlet-class>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+	<session-config>
+		<session-timeout>-1</session-timeout>
+	</session-config>
+</sip-app>
